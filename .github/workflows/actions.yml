@@ -12,6 +12,7 @@ jobs:
         with:
           go-version: '1.19'
           cache: false
+      - run: make generate
       - uses: actions/checkout@v3
       - name: golangci-lint
         uses: golangci/golangci-lint-action@v3
